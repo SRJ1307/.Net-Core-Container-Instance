@@ -52,9 +52,17 @@ Since our basic project is ready lets move to create Azure Container Registry. W
     4. Inside IAM move to Role Assingments and click on "+" icon to create a role assingment.
     5. When you will click the + icon, a new window will open , inside that under roles tab go to Privilaged Administrator Roles and select "owner".
     6. Now under same newly opened window go to memebers tab and click on add member.
-    7. Now choose ypur id from right hand side and click ok.
+    7. Now choose your id from right hand side and click ok.
     8. Now go to conditions and choose option "Allow user to assign all roles (highly privileged)" and then click on review + assign and create a role.
  The above steps are to make sure that you are able to see your images when they get uploaded, by default owner privillage is disabled in Azure even though if you are creating it only.
+
+<img width="785" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/6912f4c8-373f-4783-a99b-aa62ae784b2a">
+<img width="1175" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/a8f4c42e-8155-4721-b358-b8fe40fd3cfd">
+<img width="1212" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/3b9c3fb8-44f2-4fed-9c2c-53aa7bca6c6d">
+<img width="1229" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/1cb06e1b-0ea8-4752-a9c6-4e2a7d54209d">
+<img width="911" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/d2430cd4-a4af-4cf7-ba14-d330c8020b6a">
+
+
 
  Now let's deploy the application
     
@@ -78,12 +86,23 @@ Since our basic project is ready lets move to create Azure Container Registry. W
   8. Next is Networking Section. Inside this make sure Networking type is Public.
   9. In port section make it is sure port no which you set while creting the docker file. I am leaving it as 80, if you would have choosen the port 5000, you need to make here 5000 also.
   10. Now review + create. Leave everything as it is.Since they are not required for now.
+  
+
+
+<img width="1214" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/d551463a-c322-49df-bea0-3899b69145da">
+<img width="598" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/af7a31a4-4156-42a2-9f4d-f1c16b8436f1">
+
 
 Once the deployment is complete for container instance, go to it and open it.
 In overview section you will find the public IP. Copy it and paste it in new tab in browser.
 Suppose if your ip is "http://20.241.292.56" then make it http://20.241.292.56/weatherforecast since weatherforecast is the name of controller of application we are deploying. Now your application will be visible in browser.
 
 Note:- Here all the requestes are made on port 80 by default all http requests are made on it through browser, so it is hidden. If we would have given different port no, then we need to mention it in url like "http://20.241.292.56:5000/weatherforecast".
+Also, i have used port no 5000, so i redirected it win browser while accessing it. I took the screenshots later. so might be possible that there is some difference in screeenshot compared with points written for it.
+
+<img width="1198" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/7e62b0d2-0805-43ff-b564-c4e6f13f0159">
+<img width="549" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/59f46e10-7ad6-449e-9a03-93ca7fa99238">
+
 
 Congratulations, You just deployed a dot net core application through container instance.
 
