@@ -26,14 +26,14 @@ Since our basic project is ready lets move to create Azure Container Registry. W
     5. Now Enter the registry name, for me i am writing "srjcontainerinstance", you can give any relevant name.
     6. Chosse the location as EastUS. You can choose any location based on ypur requirement and subscription plan.
     7. Keep the pricing plan as Standard.
-    <img width="740" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/3ef22aa5-6cb7-41cc-a228-b2e4a3848c3d">
-
     8. Move to Networking section.
     9. Here you can choose the scope of registry, wether you want it to be publicly available or make it private. Since i am using Free Trail subscription, this option is disabled for me. So make it public and move to next section as Encryption.
     10. Here you can choose the Encryption method, wether you want it to encrypt using your own key or let it managed by Azure itself. I am choosing the second option as first one is disabled.
     11. Now move to last section as "Review + Create". Here microsoft will perform validation for you selected choices and inputs based on you subscription and feasibility.
     12. once the Validation passed, click on "create" on left bottom side indicated in blue color.
  
+ <img width="740" alt="image" src="https://github.com/SRJ1307/.Net-Core-Container-Instance/assets/157812379/cfb7e82a-646a-489d-a8bc-c07cea05c3ec">
+
  While the registry is being created and deployed. Let's move back to VS Code.
 
     1. Now we need to add the Docker file in our project.
